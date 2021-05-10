@@ -1,10 +1,7 @@
 window.onload = displayClock();
 function displayClock(){
-  var display = new Date();
-  var string = display.toLocaleTimeString().toLowerCase(); 
-  document.getElementById("timer").innerHTML = string;
-  string = "today is " + display.toLocaleDateString().toLowerCase();
-  document.getElementById("date").innerHTML = string;
+  document.getElementById("timer").innerHTML = new Date().toLocaleTimeString().toLowerCase();;
+  document.getElementById("date").innerHTML = new Date().toLocaleDateString().toLowerCase();;
   setTimeout(displayClock, 1000);
 }
 
