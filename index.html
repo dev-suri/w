@@ -17,16 +17,6 @@
   
   <div id="date" class="pt-40 text-white mb-10 absolute y-5 right-10">date</div>
    <div id="lastupdated" class="pt-40 text-white mb-10 pl-10 absolute y-5">last updated may 9</div>
-  
-    <script> 
-    window.onload = displayClock();
-    function displayClock(){
-      var d = new Date();
-      console.log(d.getMonth() + "/" + d.getDate() + "/" + d.getFullYear());
-      document.getElementById("date").innerHTML = d.getMonth() + "/" d.getDate() + "/" + d.getFullYear();
-      document.getElementById("timer").innerHTML = d.toLocaleTimeString();
-      setTimeout(displayClock, 1000);
-    }
-    </script>
+<script src="script.js"></script>
 </body>
 </html>
